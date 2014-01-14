@@ -46,7 +46,18 @@ javascript: (function(){
 
 //  COMPILED CODE FOR BOOKMARKLET
 
-javascript:(function(){var f=function(){Array.prototype.slice.call(document.querySelectorAll('.scribol-widget'),0).forEach(function(e){e.style.display='none';e.style.width='0';e.style.height='0';e.style.overflow='hidden';e.style.opacity='0';})};f();console.log( 'Ok. That should have hidden Scribol.' );if( window.hideScribolLoop !== undefined ){window.clearInterval( window.hideScribolLoop )};window.hideScribolLoop = window.setInterval( f, 100 );})();
+//  Create a new bookmark in your browser.
+//  Name it whatever you want.
+//  Copy and paste this in instead of a URL:
+
+javascript:(function(){var f=function(){Array.prototype.slice.call(document.querySelectorAll('.scribol-widget'),0).forEach(function(e){e.style.display='none';e.style.width='0';e.style.height='0';e.style.overflow='hidden';e.style.opacity='0';})};f();console.log('Ok. That should have hidden Scribol.');if(window.hideScribolLoop!==undefined){window.clearInterval(window.hideScribolLoop)};window.hideScribolLoop=window.setInterval(f,100);})();
+
+
+
+
+//  I’m busy. 
+//  Who’s going to make this a browser extension? 
+//  ;)
 
 
 
